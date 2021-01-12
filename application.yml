@@ -6,6 +6,9 @@ spring:
   jpa:
     hibernate:
       ddl_auto: create
+      dialect: org.hibernate.dialect.PostgresSQLDialect
+      show-sql: true
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        
 
