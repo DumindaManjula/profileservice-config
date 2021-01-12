@@ -1,15 +1,10 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/rentDB?createDatabaseIfNotExist=true
-    username: admin
+    url: jdbc:mysql://localhost:3306/rentDB?createDatabaseIfNotExist=true
+    username: duminda
     password: @Aselastar19
-    driverClassName: org.postgresql.Driver
+    driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
-      ddl_auto: create
-      dialect: org.hibernate.dialect.PostgresSQLDialect
-      show-sql: true
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-        
-
