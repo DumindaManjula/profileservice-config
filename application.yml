@@ -3,9 +3,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/rentDB?createDatabaseIfNotExist=true
     username: admin
     password: @Aselastar19
-    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
+      ddl_auto: create
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
